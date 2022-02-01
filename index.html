@@ -1,0 +1,170 @@
+<!-- Sidhant Chaudhary , 991620418 
+https://chaudsid.dev.fast.sheridanc.on.ca/SYST24444/Assignment%231/
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Assignment#1 Sidhant Chaudhary 991620418</title> 
+
+    <link rel="stylesheet" href="./css/chaudsid.CSS">
+
+</head>
+
+
+<body  style="background-image: url('./images/bg.jpg');">
+
+    
+    <header>
+
+        <div class="container">
+
+            <h1>Paint Sale</h1>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <div class="grid-container" >
+
+            <div class="grid-item">
+
+                <label for="name">Name</label>
+
+                <input id="name" type="text" value="Sid Chaudhary"/>
+
+                <div id="paintdiv">
+
+                    
+                    <label for="roomL">RoomLength</label>
+                    <input id="roomL" type="number" value="0"/>
+
+                    
+                    <label for="roomW">RoomWidth</label>
+                    <input id="roomW" type="number" value="0"/>
+
+                    
+                    <div></div>
+
+                    <label for="paint">Available Colors</label>
+
+                    <select id="paint" onchange="onProductChange">
+
+                        <option value="Red">Red</option>
+
+                        <option value="Olive">Olive</option>
+
+                        <option value="Green">Green</option>
+
+                        <option value="Blue">Blue</option>
+
+                        <option value="Grey">Grey</option>
+
+                        <option value="White">White</option>
+
+                        <option value="Purple">Purple</option>
+
+                        <option value="Orange">Orange</option>
+
+                    </select>
+
+                    <div id="roomdiv"></div>
+
+                    <label for="RoomAllocation">Room To Be Painted</label>
+
+                    <select id="room" onchange="onRoomChange">
+
+                        <option value="Bedroom">Bedroom</option>
+
+                        <option value="Bathroom">Bathroom</option>
+
+                        <option value="LivingRoom">LivingRoom</option>
+
+                        <option value="DiningRoom">DiningRoom</option</>
+
+                        <option value="Garage">Garage</option>
+
+                        <option value="Kitchen">Kitchen</option>
+
+                        <option value="Pantry">Pantry</option>
+
+                        <option value="GuestRoom">GuestRoom</option>
+
+                    </select>
+
+                    
+                    
+                    <div id="paintQdiv"></div>
+
+                    <label for="paintQ">PaintQuality</label>
+
+                    <select id="paintQ" onchange="onPaintChange">
+
+                        <option value="24.99">Standard</option>
+
+                        <option value="39.99">Premium</option>
+
+                    </select>
+
+                    <label>Price: Standard $24.99/can OR Premium $39.99/can</label> 
+
+                    <button id="save" onclick="saveData()">Register Order</button>
+
+                </div>
+
+            </div>
+
+            <div class="grid-item">
+
+                <label for="email">Email</label>
+
+                <input id="email" type="text" value="chaudsid@sheridancollege.ca" />
+
+                <div id="quantity" style="margin-top: 10px;">
+
+                    <label for="quantityofitems">Paint Quantity:</label>
+
+                    <input id="quantityofitems" type="number" value="0"/>
+
+                    
+
+                </div>
+
+                
+
+                <button id="nextpage" onclick="gotoNext()">Quotataion Page</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    
+
+        <div class="footer">
+
+            <div class="container">
+
+                <h3>chaudsid@sheridancollege.ca Trafalgarh</h3>
+
+            
+
+            </div>
+
+        </div>
+
+        
+
+    
+
+    <script src="./js/chaudsid.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+*{
+
+    margin: 2;
+
+    padding: 2;
+
+    
+
+}
+
+header{
+
+    background-color: rgb(255, 200, 150);
+
+    height: 70px;
+
+    margin:2;
+
+    text-align: center;
+
+    border : 1px solid;
+}
+
+.container{
+
+    max-width: 90%;
+
+    margin: auto;
+
+    
+
+}
+
+.grid-container{
+
+    display: grid;
+
+    grid-template-columns: auto auto;
+
+    
+
+    padding: 10px;
+
+    margin: 25px 0;
+
+    
+}
+
+.grid-item{
+
+  background-color: rgba(134, 170, 236, 0.8);
+
+  border: 2px solid rgba(255, 149, 107, 0.589);
+
+  padding: 2px;
+
+  font-size: 17px;
+
+ 
+
+}
+
+#paintdiv{
+
+    margin-top: 10px;
+    
+
+}
+
+.grid-item button{
+
+    display: block;
+
+    margin-top: 20px;
+
+    width: 60%;
+
+    height: 40px;
+
+    border : 1px solid;
+    
+
+    
+
+}
+
+.summary{
+
+    background-color: rgb(169, 181, 250);
+
+    font-size: 18px;
+
+    border : 1px solid;
+
+    display: grid;
+
+    grid-template-columns: auto auto;
+   
+    
+
+}
+
+.summary-item{
+
+    margin: 25px;
+    border: 1px solid;
+}
+
+
+
+.footer{
+
+   
+
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: rgb(255, 200, 150);
+
+    height: 70px;
+
+    margin: auto;
+
+    text-align: center;
+
+    border : 1px solid;
+}

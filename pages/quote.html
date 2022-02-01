@@ -1,0 +1,152 @@
+<!-- Sidhant Chaudhary , 991620418 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Assignment#1 Sidhant Chaudhary</title>
+
+    <link rel="stylesheet" href="../css/chaudsid.CSS">
+
+    <script>
+
+        function loadData() {
+
+            
+
+            const data = JSON.parse(localStorage.getItem('data'))
+
+            document.querySelector('#name').innerHTML = data.name;
+
+            document.querySelector('#email').innerHTML = data.email;
+
+            document.querySelector('#product').innerHTML = data.colour;
+
+            document.querySelector('#quantity').innerHTML = data.quantity;
+
+            document.querySelector('#price').innerHTML = data.price;
+
+            document.querySelector('#room').innerHTML = data.room;
+
+            document.querySelector('#Total').innerHTML = (parseInt(data.quantity) * (data.price)) + 13/100*((parseInt(data.quantity) * (data.price)));
+
+            document.querySelector('#roomArea').innerHTML = roomA = (parseInt(data.roomL)) * (parseInt(data.roomW));
+            
+
+            document.querySelector('#Ncans').innerHTML = roomA/400
+        }
+
+    </script>
+
+</head>
+
+<body onload="loadData()"  style="background-image: url('../images/bg.jpg');" >
+
+    
+
+    <header>
+
+        <div>
+
+            <h1>Paint Sale</h1>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="summary">
+
+            <div class="summary-item">
+
+                <label for="">Name:</label>
+
+                <label id="name"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Email:</label>
+
+                <label id="email"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Product:</label>
+
+                <label id="product"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Quantity:</label>
+
+                <label id="quantity"></label>
+
+            </div>
+            
+            <div class="summary-item">
+
+                <label for="">Room:</label>
+
+                <label id="room"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Price/can :</label>
+
+                <label id="price"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Room Area (ft):</label>
+
+                <label id="roomArea"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">No of cans required approx:</label>
+
+                <label id="Ncans"></label>
+
+            </div>
+
+            <div class="summary-item">
+
+                <label for="">Total price + 13% hst : $</label>
+
+                <label id="Total"></label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="container">
+
+            <h3>chaudsid@sheridancollege.ca Trafalgarh</h3>
+
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
